@@ -1,11 +1,6 @@
-body{
-    background-color: azure;
-    min-width: 380px;
+body > .contenido > h3{
+    border-bottom: .1em solid #111;
 }
-    
-    body > .contenido > h3{
-        border-bottom: .1em solid #111;
-    }
 
 
 .art1{
@@ -30,11 +25,6 @@ body{
     .art1{
         width: 45%;
         margin: .5em;
-    }
-    /*Corrige que si el menu esta desplegado no aparezca el display en block*/
-    #checkMenu:checked + nav > ul{
-        display: flex;
-        
     }
 }
 
