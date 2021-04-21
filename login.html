@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="estilos/estilosLogin.css">
-    <link rel="stylesheet" href="estilos/estilosCabecera.css">
+    <link rel="stylesheet" href="estilos/estilosGenerales.css">
     <link rel="stylesheet" href="estilos/css/fontello.css">
 </head>
 <body>
@@ -28,12 +28,31 @@
             <ul>
                 <li><a href="index.html"><span class="icon-home"></span><span>Inicio</span></a></li>
                 <li><a href="login.html"><span class="icon-login"></span><span>Login</span></a></li>
-                <li><a href="pagina3.html"><span class="icon-logout"></span><span>Logout</span></a></li>
-                <li><a href="pagina4.html"><span class="icon-search"></span><span>Buscar ruta</span></a></li>
-                <li><a href="pagina5.html"><span class="icon-plus"></span><span>Nueva ruta</span></a></li>
+                <li><a href="logout.html"><span class="icon-logout"></span><span>Logout</span></a></li>
+                <li><a href="buscar.html"><span class="icon-search"></span><span>Buscar ruta</span></a></li>
+                <li><a href="nuevaRuta.html"><span class="icon-plus"></span><span>Nueva ruta</span></a></li>
             </ul>
         </nav>
     </section>
-    
+    <section class="contenido">
+        <form>
+            <h2>Login</h2>
+            <div class="parametros">
+                <input type="text" name="user" id="userRegistro" placeholder="Introduce tu nombre de usuario" autofocus required>
+                <input type="password" name="password" id="passwordLogin" placeholder="Introduce tu contrase&ntilde;a" required autocomplete="new-password">
+            </div>
+            <div class="botones">
+                <input type="reset" value="Borrar">
+                <input type="button" value="Registrarse">
+            </div>
+            <p>Si todav&iacute;a no tienes cuenta. <a href="registro.html">Registrarse</a></p> 
+        </form> 
+    </section>
+    <footer>
+        <a href="ayuda.html">Ayuda</a>
+        <p>Pablo M&aacute;rtinez Navarro</p>
+        <time datetime="2020-2021">Curso 2020-2021</time>
+    </footer>
+    </footer>
 </body>
 </html>
