@@ -1,0 +1,68 @@
+body > .buscador > h3{
+    border-bottom: 1px solid #111;
+}
+form > div{
+    display: block;
+}
+    form > div > p{
+        border: 1px solid #111;
+        border-radius: .2em;
+        padding: 1em 3em;
+        text-align: center;
+    }
+    form > div > p:first-child{
+        background-color: var(--color-fondo-columnas);
+        width: 100%;
+        position: relative;
+    }
+    /*Le damos estilos a los botones*/
+    aside{
+        display: flex;
+        justify-content: space-between;
+    }
+    aside > input{
+        width: 100%;
+        border: 1px solid #111;
+        border-radius: .2em;
+        padding: .4em 0;
+    }
+    aside > input:hover{
+        cursor: pointer;
+        background-color: var(--color-hover-botones);
+    }
+    
+@media all and (min-width:550px){
+    form{
+        width: 80%;
+        min-width: 550px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+        form > div{
+            display: flex;
+        }
+        /*Juntamos los div*/
+        form > div > p{
+            margin-bottom: .3em;
+        }
+        /*Le damos la anchura a los parrafos*/
+        form > div > p:first-child{
+            width: 20%;
+            min-width: 210px;
+        }
+        form > div > p:last-child{
+            width: 100%;
+        }
+        /*Le damos estilo a los input number con pseudo-clases*/
+        form > div:nth-child(1) > p > input,
+        form > div:nth-child(2) > p > input{
+            width: 100%;
+        }
+        form > div:nth-child(3) > p > input:first-child,
+        form > div:nth-child(4) > p > input:first-child{
+            margin-left: .4em;
+        }
+        aside{
+            min-width: 550px;
+        }
+}

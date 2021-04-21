@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruta</title>
+    <link rel="stylesheet" href="estilos/estilosRuta.css">
+    <link rel="stylesheet" href="estilos/estilosGenerales.css">
+    <link rel="stylesheet" href="estilos/css/fontello.css">
+</head>
+<body>
+    <header>
+        <img src="imagenes/logo.jpg" alt="No ha cargado correctamente">
+        <div>
+            <h1>
+                Web de Senderismo
+            </h1>
+            <h3>
+                Puntua tu ruta de senderismo favorita
+            </h3>
+        </div>
+    </header>
+    <section class="barra-navegacion">
+        <label for="checkMenu">&equiv;</label>
+        <input type="checkbox" id="checkMenu">
+        <nav>
+            <ul>
+                <li><a href="index.html"><span class="icon-home"></span><span>Inicio</span></a></li>
+                <li><a href="login.html"><span class="icon-login"></span><span>Login</span></a></li>
+                <li><a href="logout.html"><span class="icon-logout"></span><span>Logout</span></a></li>
+                <li><a href="buscar.html"><span class="icon-search"></span><span>Buscar ruta</span></a></li>
+                <li><a href="nuevaRuta.html"><span class="icon-plus"></span><span>Nueva ruta</span></a></li>
+            </ul>
+        </nav>
+    </section>
+    <main>
+        <h2>Ruta de senderimo X</h2>
+        <section class="datosRuta">
+            <div>
+                <p>Autor</p>
+                <p><span class="icon-adult"></span><a href="usuario.html">Usuario X</a></p>
+                <p>Fecha</p>
+                <p><time datetime="2021-03-14"><span class="icon-calendar"></span>14/03/2021</time></p>
+            </div>
+            <div>
+                <p>Dificultad</p>
+                <p><span class="icon-star"></span>4.5</p>
+                <p>Tiempo</p>
+                <p><span class="icon-clock">5 horas</span></p>
+            </div>
+            <div>
+                <p>Favoritos</p>
+                <p><span class="icon-heart">8</span></p>
+                <p>Comentarios</p>
+                <p><span class="icon-comment"></span>2</p>
+            </div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto perspiciatis, aperiam voluptate eaque reprehenderit odio laudantium nobis maiores ullam provident?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto perspiciatis, aperiam voluptate eaque reprehenderit odio laudantium nobis maiores ullam provident?
+            </p>
+        </section>
+        <h2>Im&aacute;genes</h2>
+        <aside>
+            <article>
+                <img src="imagenes/rutasContenido.jpg" alt="Ruta de senderismo">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, delectus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, delLorem ipsum dolor sit amet consectetur adipisicing elit. Rem, del</p>
+                </img>
+            </article>
+            <article>
+                <img src="imagenes/galeriaRutas1.jpg" alt="Imagen 2 de la ruta">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, delectus.</p>
+                </img>
+            </article>
+            <article>
+                <img src="imagenes/galeriaRutas2.jpg" alt="Imagen 3 de la ruta">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, delectus.</p>
+                </img>
+            </article>
+        </aside>
+        <h2>Comentarios</h2>
+        <section class="comentarios">
+            <div>
+                <article>
+                    <div class="tittle">
+                        <p>Por: <span class="icon-adult"></span><a href="usuario.html">Usuario X</a></p>
+                        <time datetime="14/23/2021"><span class="icon-calendar"></span>14/23/2021 15:05</time>
+                    </div>
+                    <h4>T&iacute;tulo del comentario 1</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, eveniet?</p>
+                </article>
+
+                <article>
+                    <div class="tittle">
+                        <p>Por: <span class="icon-adult"></span><a href="usuario.html">Usuario X</a></p>
+                        <time datetime="14/23/2021"><span class="icon-calendar"></span>14/23/2021 15:05</time>
+                    </div>
+                    <h4>T&iacute;tulo del comentario 2</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, eveniet?</p>
+                </article>
+            </div>
+            <form>Tienes que estar <a href="login.html">logeado</a> para poder comentar
+                <p>Deja tu comentario:</p>
+                <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+                <div class="botones">
+                    <input type="reset" value="Borrar">
+                    <input type="button" value="Comentar">
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <a href="ayuda.html">Ayuda</a>
+        <p>Pablo M&aacute;rtinez Navarro</p>
+        <time datetime="2020-2021">Curso 2020-2021</time>
+    </footer>
+</body>
+</html>

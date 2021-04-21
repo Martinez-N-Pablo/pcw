@@ -1,0 +1,45 @@
+main > h3{
+    border-bottom: 1px solid #111;
+}
+main > form{
+    display: flex;
+    flex-direction: column;
+    
+    margin: .5em;
+}
+    main > form > input{
+        padding: .2em;
+    }   
+    main > form > textarea{
+        padding: .5em;
+    }
+
+/*Estilos dificultad y tiempo*/
+main > form > .detalles > input{
+    margin: .3em;
+    padding: .3em;
+    width: 80%;
+}
+
+/*Estilos botones*/
+main > form > .botones{
+    display: flex;
+    justify-content: space-between;
+}
+    main > form > .botones > input{
+        width: 100%;
+    }
+    main > form > .botones > input:hover{
+        cursor: pointer;
+    }
+@media all and (min-width:600px){
+    main > form{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    main > form > .detalles{
+        display: flex;
+        justify-content: space-between;
+    }
+}

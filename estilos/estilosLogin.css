@@ -1,0 +1,59 @@
+input{
+    border: 1px solid #111;
+    border-radius: .15em;
+    padding: .4em;
+}
+/*Estilos generales para posicionar la seccion de login*/
+section.contenido{
+    width:100%;
+    background-color: rgba(243, 207, 207, 0.637);
+    border: 1px solid #111;
+    border-radius: .2em;
+}
+    section.contenido > form > h2,p{
+        padding-left: 1em;
+        text-align: center;
+    }
+    /*Seccion de los inputs*/
+    section.contenido > form > div.parametros{
+        display: flex;
+        flex-direction: column;
+        padding: .1em .5em;
+    }
+        section.contenido > form > div > input{
+            margin-bottom: .5em;
+        }
+        section.contenido > form > div > input:hover{
+            cursor:pointer;
+            background-color: var(--color-hover-botones);
+        }
+    /*Seccion de botones*/
+    section.contenido > form > .botones{
+        display: flex;
+        justify-content: space-between;
+        margin: .2em;
+    }
+        section.contenido > form > .botones > input{
+            width: 100%;
+        }
+        section.contenido > form > .botones > input:hover{
+            cursor: pointer;
+        }
+        
+    /*Ultima frase para cambiar entre Registro y Login*/
+    section.contenido > form > p{
+        font-size: small;
+    }
+        section.contenido > form > p > a:hover{
+            font-size: smaller;
+        }
+
+@media all and (min-width:500px){
+    section.contenido{
+        width: 35%;
+        margin: 1em 0 1em 0;
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 500px;
+    }
+}

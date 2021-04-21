@@ -1,0 +1,133 @@
+main{
+    margin: 1em 0 1em 0;
+}
+    main > section{
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+    main > h2{
+        margin-bottom: .4em;
+        border-bottom: 1px solid #111;
+    }   
+    
+        main > section > div{
+            display: flex;
+            flex-flow: column wrap;
+        }
+        main > section> div > p{
+            border: 1px solid #111;
+            border-radius: .1em;
+            text-align: center;
+            padding: .2em 0;
+        }
+        main > section > div >p:nth-child(2n+1){
+            background-color: var(--color-fondo-columnas);
+        }
+        main > section > p:last-of-type{
+            margin: .5em 0;
+        }
+    /*Ajustar las imagenes*/
+    main > aside{
+        margin: 0 .2em;
+    }
+    main > aside > article{
+        border: 1px solid #111;
+        padding: .5em;
+        margin: .5em 0;
+
+        display: flex;
+        flex-direction: column;
+    }
+        main > aside > article > p{
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 100%;
+        }
+    /*Estilos comentarios*/
+    main > .comentarios > div{
+        padding: .1em;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    main > .comentarios > div > article{
+        border: 1px solid #111;
+        padding: 1em;
+        margin: .1em;
+
+    }
+        main > .comentarios > div > article > .tittle{
+            border-bottom: 1px solid #111;
+        }
+        main > .comentarios > div > article > p,
+        main > .comentarios > div > article > h4{
+            padding-top: .2em;
+        }
+        
+    /*Estilos caja de comentarios*/
+    main > .comentarios > form{
+        border: 1px solid #111;
+        padding: 1em;
+    }
+        main > .comentarios > form > p{
+            padding: .2em 0 .3em;
+        }       
+        main > .comentarios > form > textarea{
+            width: 100%;
+            padding: .2em;
+        }
+        main > .comentarios > form > .botones{
+            display: flex;
+            justify-content: space-between;
+        }
+            main > .comentarios > form > .botones > input{
+                width: 100%;
+            }
+        
+@media all and (min-width:700px){
+    main > section{
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }   
+        main > section > div{
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        main > section> div > p{
+            border: 1px solid #111;
+            border-radius: .1em;
+            text-align: center;
+            padding: .2em 0;
+        }
+        /*Seccion gris*/
+        main > section > div >p:nth-child(2n+1){
+            width: 15%;
+        }
+        /*Informacion de la ruta*/
+        main > section > div >p:nth-child(2n){
+            width: 25%;
+        }
+    /*Estilos para las imagenes*/
+    main > aside{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    main > aside > article{
+        width: 40%;
+        border-radius: 1px solid #111;
+    }
+    /*Estilos para los comentarios*/
+    main > .comentarios{
+        display: flex;
+        justify-content: space-between;
+    }
+    main > .comentarios:nth-child(n){
+        width: 100%;
+    }
+}

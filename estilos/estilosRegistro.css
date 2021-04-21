@@ -1,0 +1,36 @@
+section.contenido{
+    width:100%;
+    background-color: rgb(219, 216, 216);
+    border: 1px solid #111;
+    border-radius: .2em;
+}
+    section.contenido > div{
+        padding: 0 .5em;
+    }
+    section.contenido > div > h2{
+        padding-left: 1em;
+    }
+    section.contenido > div > section.parametros{
+        display: flex;
+        flex-direction: column;
+        padding: .1em .5em;
+    }
+        section.contenido > div > section.parametros > input{
+            margin-bottom: .5em;
+        }
+    section.contenido > div > button{
+        width: 100%;
+        padding: .2em;
+    }
+    section.contenido > div > p{
+        font-size: small;
+    }
+@media all and (min-width:500px){
+    section.contenido{
+        width: 30%;
+        margin: 0 0 1em 0;
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 500px;
+    }
+}

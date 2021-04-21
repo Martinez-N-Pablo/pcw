@@ -1,25 +1,55 @@
+/*WEB FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital@0;1&display=swap');
+/*Variables*/
+:root{
+    --color-hover-botones: rgb(213, 214, 214);
+    --color-barra-navegacion: #08d1d1;
+    --color-sombra:  rgb(161, 161, 161);
+    --color-fondo-columnas:rgb(158, 158, 158);
+}
+/*Estilos globales*/
 *{
     box-sizing: border-box;
     padding: 0;
+    margin: 0;
 }
 a{
     text-decoration: none;
 }
+button{
+    border: 1px solid #111;
+    border-radius: .3em;
+    background-color: none;
+}
 body{
     background-color: azure;
     min-width: 380px;
+    font-family: 'PT Sans';
+}
+h3,h2{
+    margin: .5em;
 }
     
 /*Estilos cabezera*/
 body > header{
     border: 1px solid;
     text-align: center;
-    background-color: brown;
-    
+    color: white;
+    background-image: url(../imagenes/senderismoTitulo.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    opacity: .9;    
 }
-
+    body > header > img{
+        opacity: .8;
+    }
+    body > header > div{
+        margin: .5em 0;
+    }
+/*Barra navegacion*/
 body > .barra-navegacion{
-    background-color: aqua;
+    background-color: var(--color-barra-navegacion);
     width: 100%;
 }
     .barra-navegacion > #checkMenu{
@@ -37,13 +67,13 @@ body > .barra-navegacion{
     }
     .barra-navegacion > label:hover{
         cursor: pointer;
-        background-color: #08d1d1;            
+        background-color:var(--color-barra-navegacion);            
     }
         nav > ul > li{
             display: grid;
         }
             nav > ul > li > a{
-                background-color: aqua;
+                background-color: var(--color-barra-navegacion);
                 border: 1px solid #111;
                 color: #111;
             }
@@ -53,19 +83,18 @@ body > .barra-navegacion{
 
 /*Estilos para el foother*/
 body > footer{
-    background-color: aqua;
+    background-color: var(--color-barra-navegacion);
     text-align: center;
     align-items: center;
     display: flex;
     justify-content: space-between;
-    padding: 0 .2em;
+    padding: .5em;
 }
 
 
 /*Despliega el menu*/
 #checkMenu:checked + nav > ul{
     display: block;
-    
 }
 
 @media all and (min-width:500px){
@@ -101,5 +130,4 @@ body > footer{
     nav > ul > li > a>span:last-child{
         display: inline-block;
     }
-    /*Corrige que si el menu esta desplegado no aparezca el display en block*/
 }
